@@ -1,6 +1,9 @@
-﻿namespace itransition_task3.Rules;
+﻿using itransition_task3.CommandLine;
+using itransition_task3.Validation;
 
-public class IValidationRule
+namespace itransition_task3.Rules;
+
+public interface IValidationRule
 {
-    
+    ValidationError? Validate(CommandLineArgs args);
 }

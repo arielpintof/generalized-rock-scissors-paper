@@ -1,4 +1,4 @@
-﻿namespace itransition_task3.Validator;
+﻿namespace itransition_task3.Validation;
 
 public class EvenMovesCountError : ValidationError
 {
