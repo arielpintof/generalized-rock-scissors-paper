@@ -117,7 +117,7 @@ public class Game(List<string> moves)
     private static void DrawTable(List<string> moves)
     {
         var results = SetTable(moves);
-        var table = new ConsoleTable(moves.Prepend("").ToArray());
+        var table = new ConsoleTable(moves.Prepend("v PC\\User >").ToArray());
         for (var i = 0; i < moves.Count; i++)
         {
             var row = new object[moves.Count + 1];
