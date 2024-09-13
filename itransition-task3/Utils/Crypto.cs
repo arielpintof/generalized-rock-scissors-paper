@@ -5,9 +5,9 @@ namespace itransition_task3.Utils;
 
 public static class Crypto
 {
-    public static byte[] GenerateRandomKey()
+    public static byte[] GenerateRandomKey(int keyLength = 32)
     {
-        var key = new byte[32];
+        var key = new byte[keyLength];
         RandomNumberGenerator.Fill(key);
         
         return key;
